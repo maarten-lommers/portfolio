@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(mobile-design)",
+      "Skill(mobile-design:*)",
+      "Bash(python3 \"c:\\\\Users\\\\Maart\\\\Desktop\\\\Portfolio\\\\portfolio\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"personal portfolio developer professional nature forest organic\" --design-system -p \"Maarten Portfolio\")",
+      "Bash(python \"c:\\\\Users\\\\Maart\\\\Desktop\\\\Portfolio\\\\portfolio\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"personal portfolio developer professional nature forest organic\" --design-system -p \"Maarten Portfolio\")",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"c:\\\\Users\\\\Maart\\\\Desktop\\\\Portfolio\\\\portfolio\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"personal portfolio developer professional nature forest organic\" --design-system -p \"Maarten Portfolio\")"
+    ]
+  }
+}
