@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useReveal } from "../../../hooks/useReveal"
 
-function ProjectCard({ title, subtitle, image, imageDetails, skills, descriptionParagraphs, contributionParagraphs, learnedParagraphs, angle, revealDelay = 0, orientation }) {
+function ProjectCard({ title, subtitle, image, imageDetails, skills, descriptionParagraphs, contributionParagraphs, learnedParagraphs, angle, revealDelay = 0, orientation, link }) {
     const [open, setOpen] = useState(false)
     const cardRef = useReveal(0.1, revealDelay)
 
@@ -13,7 +13,12 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
                 onClick={() => setOpen(true)}
             >
                 <p className="text-portfolio-cream-muted text-sm italic">{subtitle}</p>
-                <h2 className="text-portfolio-cream font-bold text-xl mb-4">{title}</h2>
+                <h2 className="text-portfolio-cream font-bold text-xl mb-4">
+                    {link
+                        ? <a href={link} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()} className="hover:text-portfolio-accent-muted transition-colors duration-200 gap-1">{title} <span className="text-xs opacity-80 underline">Link ↗</span></a>
+                        : title
+                    }
+                </h2>
                 <img
                     className="w-full h-64 object-cover rounded bg-portfolio-primary mb-4"
                     src={image}

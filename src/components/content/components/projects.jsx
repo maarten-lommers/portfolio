@@ -30,6 +30,7 @@ const PROJECTS = [
         learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
         angle: "hover:rotate-2",
         orientation: "vertical",
+        link: "https://youji.be",
     },
     {
         title: "DAF Trucks",
