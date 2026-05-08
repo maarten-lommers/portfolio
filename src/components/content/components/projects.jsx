@@ -4,14 +4,15 @@ import Youji1 from "@/assets/youji.jpg";
 import Youji2 from "@/assets/youji2.png";
 import Daf from "@/assets/daf.png";
 import Duffalo from "@/assets/duffalo.png";
+import Mobilab from "@/assets/mobilab.png"
 
 
 const PROJECTS = [
     {
         title: "Mobilab & Care",
         subtitle: "Single Web Application (internship)",
-        image: "",
-        imageDetails: "",
+        image: Mobilab,
+        imageDetails: Mobilab,
         skills: [".NET EF", "ReactJS", "Data Modeling"],
         descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
         contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],

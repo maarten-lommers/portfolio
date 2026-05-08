@@ -28,22 +28,22 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
 
             {open && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60" onClick={() => setOpen(false)}>
-                    <div className="bg-portfolio-cream mx-5 mb-20 rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+                    <div className="bg-portfolio-primary-dark mx-5 mb-20 rounded-xl w-full max-w-4xl overflow-y-auto" onClick={e => e.stopPropagation()}>
                         <div className="px-8 pt-6 pb-3">
                             <div className="flex justify-between items-start mb-6">
                                 <div>
-                                    <p className="text-portfolio-primary-dark text-sm italic mb-1">{subtitle}</p>
-                                    <h2 className="text-portfolio-primary-dark font-bold text-2xl">{title}</h2>
+                                    <p className="text-portfolio-cream text-sm italic mb-1">{subtitle}</p>
+                                    <h2 className="text-portfolio-cream font-bold text-2xl">{title}</h2>
                                 </div>
                                 <button
                                     onClick={() => setOpen(false)}
                                     aria-label="Close"
-                                    className="relative -top-5 -right-5 min-h-11 min-w-11 flex items-center justify-center text-portfolio-accent-dark hover:text-cream text-2xl font-bold transition-colors rounded-lg hover:bg-surface-raised cursor-pointer">
+                                    className="relative -top-5 -right-5 min-h-11 min-w-11 flex items-center justify-center text-portfolio-cream hover:text-cream text-2xl font-bold transition-colors rounded-lg hover:bg-surface-raised cursor-pointer">
                                     ×
                                 </button>
                             </div>
 
-                            <div className={orientation == "vertical" ? "flex flex-row-reverse justify-between h-116" : "flex flex-col"}>
+                            <div className={orientation == "vertical" ? "flex flex-row-reverse justify-between h-116 bg-portfolio-cream rounded p-5" : "flex flex-col bg-portfolio-cream rounded p-5"}>
                                 {imageDetails && (
                                     <img
                                         src={imageDetails}
@@ -51,7 +51,7 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
                                         alt={title}
                                     />
                                 )}
-                                <div className={orientation == "vertical" ? "flex flex-col space-y-6 text-cream-muted text-sm leading-relaxed" : "flex flex-row space-y-6 text-cream-muted text-sm leading-relaxed"}>
+                                <div className={orientation == "vertical" ? "flex flex-col space-y-6 text-cream-muted text-sm leading-relaxed" : "flex flex-row gap-6 text-cream-muted text-sm leading-relaxed"}>
                                     {[
                                         { label: 'Description',    items: descriptionParagraphs },
                                         { label: 'Contributions',  items: contributionParagraphs },
