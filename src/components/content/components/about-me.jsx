@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profile from "@/assets/profile.jpg";
+import profile from "@/assets/me.png";
 import Button from "@/components/ui/Button";
 import { useReveal } from "../../../hooks/useReveal";
 import CV from "@/assets/maarten_lommers.pdf"
