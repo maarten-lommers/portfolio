@@ -1,4 +1,4 @@
-function Button({ variant = 'primary', href, onClick, children, className = '' }) {
+function Button({ variant = 'primary', href, target, onClick, children, className = '' }) {
   const Tag = href ? 'a' : 'button'
   const base = 'px-5 py-2 rounded font-semibold text-sm transition-all hover:opacity-80 hover:-translate-y-1 cursor-pointer'
   const variants = {
@@ -8,6 +8,7 @@ function Button({ variant = 'primary', href, onClick, children, className = '' }
   return (
     <Tag
       href={href}
+      target={target}
       onClick={onClick}
       className={`flex items-center gap-2 ${base} ${variants[variant] ?? variants.primary} ${className}`}
     >

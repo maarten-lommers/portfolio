@@ -1,15 +1,18 @@
 function Footer() {
     return (
-        <footer className="py-8 border-t border-secondary/40">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-                <span className="font-extrabold text-cream">Maarten Lommers</span>
-                <nav className="flex gap-6">
-                    <a href="" className="text-cream-muted hover:text-cream transition-colors duration-200 cursor-pointer">Home</a>
-                    <a href="" className="text-cream-muted hover:text-cream transition-colors duration-200 cursor-pointer">About</a>
-                    <a href="" className="text-cream-muted hover:text-cream transition-colors duration-200 cursor-pointer">Projects</a>
-                    <a href="" className="text-cream-muted hover:text-cream transition-colors duration-200 cursor-pointer">Contact</a>
-                </nav>
-                <span className="text-cream-muted/60">© {new Date().getFullYear()}</span>
+        <footer className="bg-portfolio-accent" >
+            <div className="max-w-5xl px-10 mx-auto py-8">
+                <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+                    <a href="" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200 flex gap-2">
+                        <span className="text-portfolio-cream">© {new Date().getFullYear()}</span>
+                        Maarten Lommers 
+                    </a>
+                    <nav className="flex gap-6">
+                        <a href="#" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Home</a>
+                        <a href="#projects" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Projects</a>
+                        <a href="#contact" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Contact</a>
+                    </nav>
+                </div>
             </div>
         </footer>
     )

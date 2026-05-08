@@ -1,10 +1,17 @@
 import ProjectCard from "./project-card"
 import { useReveal } from "../../../hooks/useReveal"
+import Youji1 from "@/assets/youji.jpg";
+import Youji2 from "@/assets/youji2.png";
+import Daf from "@/assets/daf.png";
+import Duffalo from "@/assets/duffalo.png";
+
 
 const PROJECTS = [
     {
         title: "Mobilab & Care",
         subtitle: "Single Web Application (internship)",
+        image: "",
+        imageDetails: "",
         skills: [".NET EF", "ReactJS", "Data Modeling"],
         descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
         contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
@@ -14,17 +21,20 @@ const PROJECTS = [
     {
         title: "Youji",
         subtitle: "Mobile Application (personal)",
-        image: "",
+        image: Youji2,
+        imageDetails: Youji1,
         skills: [".NET EF", "ReactTS", "Flutter"],
         descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
         contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
         learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
-        angle: "hover:rotate-2"
+        angle: "hover:rotate-2",
+        orientation: "vertical",
     },
     {
         title: "DAF Trucks",
         subtitle: "QLIK Dashboard (school project)",
-        image: "",
+        image: Daf,
+                imageDetails: Daf,
         skills: ["QLIK", "Data Analysis"],
         descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
         contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
@@ -34,7 +44,8 @@ const PROJECTS = [
     {
         title: "Duffalo's soccer club",
         subtitle: "Web Application (school project)",
-        image: "",
+        image: Duffalo,
+                imageDetails: Duffalo,
         skills: ["Laravel", "Data Modeling"],
         descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
         contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
@@ -45,10 +56,9 @@ const PROJECTS = [
 
 function Projects() {
     const headerRef = useReveal()
-    const gridRef   = useReveal(0.1)
 
     return (
-        <section className="py-16 bg-portfolio-cream">
+        <section id="projects" className="py-16 bg-portfolio-cream">
             <div className="max-w-5xl mx-auto p-10">
                 <div ref={headerRef} className="reveal mb-12 text-center">
                     <div className="flex items-center justify-center gap-3 mb-3">
@@ -62,9 +72,9 @@ function Projects() {
                         Explicabo blanditiis perferendis, magni magnam tempore pariatur reprehenderit ad!
                     </p>
                 </div>
-                <div ref={gridRef} className=" grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {PROJECTS.map(project => (
-                        <ProjectCard key={project.title} {...project} />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {PROJECTS.map((project, i) => (
+                        <ProjectCard key={project.title} {...project} revealDelay={i * 100} />
                     ))}
                 </div>
             </div>
