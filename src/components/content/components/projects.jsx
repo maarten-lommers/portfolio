@@ -61,7 +61,7 @@ function Projects() {
 
     return (
         <section id="projects" className="py-16 bg-portfolio-cream">
-            <div className="max-w-5xl mx-auto p-10">
+            <div className="max-w-5xl mx-auto p-4 md:p-10">
                 <div ref={headerRef} className="reveal mb-12 text-center">
                     <div className="flex items-center justify-center gap-3 mb-3">
                         <span className="h-px w-10 bg-portfolio-accent-dark rounded-full" />

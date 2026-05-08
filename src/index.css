@@ -29,6 +29,7 @@ html {
 body {
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
+  background-color: #1a2210;
 }
 
 @keyframes swoop-up {

@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import { useReveal } from "../../../hooks/useReveal";
 import CV from "@/assets/maarten_lommers.pdf"
 
-const SKILLS = ['.NET EF', 'ReactJS', 'Flutter', 'Laravel']
+const SKILLS = ['.NET', 'ReactJS', 'Flutter', 'SOLID', 'SCRUM']
 
 function AboutMe() {
     const labelRef   = useReveal(0, 0)
@@ -22,7 +22,7 @@ function AboutMe() {
     }, [])
 
     return (
-        <section className="py-20 md:py-32 max-w-5xl mx-auto px-10  ">
+        <section className="py-20 md:py-32 max-w-5xl mx-auto px-4 md:px-10">
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
 
                 <article>
@@ -38,7 +38,7 @@ function AboutMe() {
                         Delectus magni placeat necessitatibus vero quam reiciendis laudantium
                         enim quisquam magnam.
                     </p>
-                    <div ref={skillsRef} className="reveal flex gap-2">
+                    <div ref={skillsRef} className="reveal flex flex-wrap gap-2">
                         {SKILLS.map(skill => (
                             <div key={skill} className="skill-tag bg-portfolio-accent-dark text-portfolio-cream px-2 py-0.5 rounded text-sm hover:-translate-y-1 transition-all duration-200">{skill}</div>
                         ))}

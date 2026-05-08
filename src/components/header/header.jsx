@@ -11,7 +11,7 @@ function Header() {
     }, [])
 
     return (
-        <header className={`sticky top-0 z-40 px-10 transition-all duration-300 ${
+        <header className={`sticky top-0 z-40 px-4 md:px-10 transition-all duration-300 ${
             scrolled
                 ? 'bg-portfolio-primary-dark/80 backdrop-blur-md shadow-lg shadow-black/30'
                 : 'bg-transparent'
