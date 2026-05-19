@@ -1,9 +1,11 @@
 import { useState } from "react"
 import { useReveal } from "../../../hooks/useReveal"
+import { useLockBodyScroll } from "../../../hooks/useLockBodyScroll"
 
 function ProjectCard({ title, subtitle, image, imageDetails, skills, descriptionParagraphs, contributionParagraphs, learnedParagraphs, angle, revealDelay = 0, orientation, link }) {
     const [open, setOpen] = useState(false)
     const cardRef = useReveal(0.1, revealDelay)
+    useLockBodyScroll(open)
 
     return (
         <>
@@ -33,7 +35,7 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
 
             {open && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60" onClick={() => setOpen(false)}>
-                    <div className="bg-portfolio-primary-dark mx-5 mb-20 rounded-xl w-full max-w-4xl overflow-y-auto" onClick={e => e.stopPropagation()}>
+                    <div className="bg-portfolio-primary-dark mx-5 mb-20 rounded-xl w-full max-w-4xl max-h-[calc(100vh-5rem)] overflow-y-auto" onClick={e => e.stopPropagation()}>
                         <div className="px-8 pt-6 pb-3">
                             <div className="flex justify-between items-start mb-6">
                                 <div>
