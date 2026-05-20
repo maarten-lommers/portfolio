@@ -50,7 +50,7 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
                                 </button>
                             </div>
 
-                            <div className={orientation == "vertical" ? "flex flex-row-reverse justify-between h-116 bg-portfolio-cream rounded p-5" : "flex flex-col bg-portfolio-cream rounded p-5"}>
+                            <div className={orientation == "vertical" ? "flex flex-col md:flex-row-reverse justify-between  bg-portfolio-cream rounded p-5" : "flex flex-col bg-portfolio-cream rounded p-5"}>
                                 {imageDetails && (
                                     <img
                                         src={imageDetails}
@@ -58,14 +58,14 @@ function ProjectCard({ title, subtitle, image, imageDetails, skills, description
                                         alt={title}
                                     />
                                 )}
-                                <div className={orientation == "vertical" ? "flex flex-col space-y-6 text-cream-muted text-sm leading-relaxed" : "flex flex-row gap-6 text-cream-muted text-sm leading-relaxed"}>
+                                <div className={orientation == "vertical" ? "flex flex-col space-y-6 text-cream-muted me-5 text-sm leading-relaxed" : "flex md:grid md:grid-cols-3 flex-wrap gap-6 text-cream-muted text-sm leading-relaxed"}>
                                     {[
                                         { label: 'Description',    items: descriptionParagraphs },
                                         { label: 'Contributions',  items: contributionParagraphs },
                                         { label: 'What I learned', items: learnedParagraphs },
                                     ].map(({ label, items }) => (
                                         <div key={label} >
-                                            <h3 className="text-accent-muted font-bold text-base mb-2">{label}</h3>
+                                            <h3 className="text-accent-muted font-bold text-base mb-2 col-span-1">{label}</h3>
                                             {items?.map((p, i) => <p key={i}>{p}</p>)}
                                         </div>
                                     ))}

@@ -14,9 +14,9 @@ const PROJECTS = [
         image: Mobilab,
         imageDetails: Mobilab,
         skills: [".NET EF", "ReactJS", "Data Modeling"],
-        descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
-        contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
-        learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
+        descriptionParagraphs:   ["Web application where therapist can upload and visualise patient data like Lungmetrics, Sessions,Lungsound,..."],
+        contributionParagraphs:  ["Fully implemented by myself."],
+        learnedParagraphs:       ["How to create a user friendly dashboard while maintaining SOLID principles, ensuring scalability."],
         angle: "hover:-rotate-1"
     },
     {
@@ -25,9 +25,9 @@ const PROJECTS = [
         image: Youji2,
         imageDetails: Youji1,
         skills: [".NET EF", "ReactTS", "Flutter"],
-        descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
-        contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
-        learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
+        descriptionParagraphs:   ["An Android/IOS application designed for quick learning with flashcards using spaced repetition system. Created by me (Maarten Lommers) and Lars Kammeijer. Built using Flutter and .NET."],
+        contributionParagraphs:  ["I worked mainly on design, features and branding/marketing. My friend worked mainly on infrastructure, CI/CD and testing"],
+        learnedParagraphs:       ["The importance of a good CI/CD and get early user feedback. Writing tests is important for reliability. Once you release an app into the public, there are many laws and legislation to adhere to."],
         angle: "hover:rotate-2",
         orientation: "vertical",
         link: "https://youji.be",
@@ -70,8 +70,7 @@ function Projects() {
                     </div>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-portfolio-primary mb-4">My Projects</h2>
                     <p className="text-portfolio-primary-light max-w-2xl mx-auto leading-relaxed">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Explicabo blanditiis perferendis, magni magnam tempore pariatur reprehenderit ad!
+                        A variety of large projects I enjoyed working on, what my contributions are and what I learned from them! 
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

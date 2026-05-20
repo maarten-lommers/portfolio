@@ -34,9 +34,9 @@ function AboutMe() {
                         <span className="text-accent-muted">Maarten Lommers</span>
                     </h1>
                     <p ref={bodyRef} className="reveal text-portfolio-cream-muted text-lg leading-relaxed mb-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Delectus magni placeat necessitatibus vero quam reiciendis laudantium
-                        enim quisquam magnam.
+                        Passionate and curious with a love for data. I enjoy exploring and
+                        learning new topics, enthusiastic to discover new cultures and devoted to life-long
+                        learning.
                     </p>
                     <div ref={skillsRef} className="reveal flex flex-wrap gap-2">
                         {SKILLS.map(skill => (
