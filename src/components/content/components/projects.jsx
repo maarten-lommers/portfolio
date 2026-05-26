@@ -38,9 +38,9 @@ const PROJECTS = [
         image: Daf,
                 imageDetails: Daf,
         skills: ["QLIK", "Data Analysis"],
-        descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
-        contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
-        learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
+        descriptionParagraphs:   ["Project where I created a dashboard for DAF Trucks, using QLIK. We had to analyze data and create visualizations to help DAF make better business decisions."],
+        contributionParagraphs:  ["Built a story telling dashboard from scratch, including dynamic visualizations and data transformations."],
+        learnedParagraphs:       ["I learned how to analyze data and how to create effective visualizations. I also learned how to tell a story with data and how to communicate insights effectively."],
         angle: "hover:rotate-1"
     },
     {
@@ -49,9 +49,9 @@ const PROJECTS = [
         image: Duffalo,
                 imageDetails: Duffalo,
         skills: ["Laravel", "Data Modeling"],
-        descriptionParagraphs:   ["Lorem ipsum dolor sit amet", "Consectetur adipisicing elit", "Explicabo blanditiis perferendis"],
-        contributionParagraphs:  ["Built responsive layouts", "Implemented reusable components", "Polished UI details"],
-        learnedParagraphs:       ["Improved accessibility patterns", "Refined component structure", "Learned performance optimizations"],
+        descriptionParagraphs:   ["Team project for managing the soccer club's website and player information."],
+        contributionParagraphs:  ["Designed and implemented the backend and frontend using Laravel.", "Created a user-friendly interface for managing club matches"],
+        learnedParagraphs:       ["Enhanced my skills in full-stack development with Laravel.", "Improved my understanding of database design and modeling."],
         angle: "hover:-rotate-2"
     },
 ]
