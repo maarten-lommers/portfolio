@@ -17,6 +17,7 @@ function NavHamburger() {
             {open && (
                 <div className="absolute z-10 right-0 mt-2 w-48 bg-portfolio-cream rounded shadow p-2 flex flex-col">
                     <a href="#" className="px-4 py-2 text-sm font-semibold text-portfolio-primary-dark hover:text-portfolio-accent-dark hover:underline transition-colors duration-200 cursor-pointer">About me</a>
+                    <a href="#internship" className="px-4 py-2 text-sm font-semibold text-portfolio-primary-dark hover:text-portfolio-accent-dark hover:underline transition-colors duration-200 cursor-pointer">Internship</a>
                     <a href="#projects" className="px-4 py-2 text-sm font-semibold text-portfolio-primary-dark hover:text-portfolio-accent-dark hover:underline transition-colors duration-200 cursor-pointer">Projects</a>
                     <a href="#contact" className="px-4 py-2 text-sm font-semibold text-portfolio-primary-dark hover:text-portfolio-accent-dark hover:underline transition-colors duration-200 cursor-pointer">Contact</a>
                 </div>

@@ -9,6 +9,7 @@ function Footer() {
                     </a>
                     <nav className="flex gap-6">
                         <a href="#" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Home</a>
+                        <a href="#internship" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Internship</a>
                         <a href="#projects" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Projects</a>
                         <a href="#contact" className="text-portfolio-cream hover:text-portfolio-accent-muted transition-colors duration-200">Contact</a>
                     </nav>

@@ -6,6 +6,7 @@ import { fileURLToPath, URL } from "node:url";
 export default defineConfig({
   base: "/portfolio/",
   plugins: [react(), tailwindcss()],
+  assetsInclude: ["**/*.docx", "**/*.zip"],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

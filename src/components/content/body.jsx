@@ -1,6 +1,7 @@
 import AboutMe from "./components/about-me";
 import ContactMe from "./components/contact-me";
 import Projects from "./components/projects";
+import Internship from "./components/internship";
 
 function Wave() {
     return (
@@ -27,6 +28,7 @@ function Body() {
         <div>
             <AboutMe />
             <Wave />
+            <Internship />
             <Projects />
             <WaveInverted />
             <ContactMe />
