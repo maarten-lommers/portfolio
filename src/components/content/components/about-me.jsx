@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import profile from "@/assets/me.png";
 import Button from "@/components/ui/Button";
 import { useReveal } from "../../../hooks/useReveal";
-import CV from "@/assets/maarten_lommers.pdf"
-
 const SKILLS = ['.NET', 'ReactJS', 'Flutter', 'SOLID', 'SCRUM']
 
 function AboutMe() {
@@ -45,7 +43,7 @@ function AboutMe() {
                     </div>
                     <div ref={buttonsRef} className="reveal flex flex-wrap gap-3 mt-10">
                         <Button href="#projects">View Projects</Button>
-                        <Button href={CV} target="_blank" variant="secundairy">Download CV</Button>
+                        <Button href="/cv" variant="secundairy">View CV</Button>
                     </div>
                 </article>
 
