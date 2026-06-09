@@ -8,7 +8,7 @@ function Button({ variant = 'primary', href, target, onClick, children, classNam
   }
   const classes = `flex items-center gap-2 ${base} ${variants[variant] ?? variants.primary} ${className}`
 
-  if (href?.startsWith('/')) {
+  if (href?.startsWith('/') && !/\.\w+$/.test(href)) {
     return (
       <Link to={href} className={classes}>
         {children}
